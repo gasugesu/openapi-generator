@@ -299,9 +299,12 @@ paths:
       summary: Place an order for a pet
       description: ''
       operationId: placeOrder
-      produces:
-        - application/xml
+      consumes:
         - application/json
+        - application/xml
+      produces:
+        - application/json
+        - application/xml
       parameters:
         - in: body
           name: body
