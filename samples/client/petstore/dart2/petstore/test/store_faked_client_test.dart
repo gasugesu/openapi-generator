@@ -29,6 +29,7 @@ void main() {
         expectedUrl: 'http://petstore.swagger.io/v2/store/order',
         expectedPostRequestBody: storeApi.apiClient.serialize(newOrder),
         postResponseBody: storeApi.apiClient.serialize(newOrder),
+        expectedHeaders: {"Content-Type": "application/json"}
       );
       await storeApi.placeOrder(newOrder);
 
@@ -50,6 +51,7 @@ void main() {
         expectedUrl: 'http://petstore.swagger.io/v2/store/order',
         expectedPostRequestBody: storeApi.apiClient.serialize(newOrder),
         postResponseBody: storeApi.apiClient.serialize(newOrder),
+        expectedHeaders: {"Content-Type": "application/json"}
       );
       await storeApi.placeOrder(newOrder);
 
